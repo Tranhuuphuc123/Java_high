@@ -1,0 +1,27 @@
+***************************DATABASEMETADATA VÀ GETMETATDATA**************
+>>>Khái niệm:
+ - khi thực thi kết nối JDBC với mySQL  ngoài hàm kết nối Conecction, ngắt kết nối thì một phần không thể thiếu đó là
+ lấy thông tin data, vì vậy ta sẽ tiềm hiểu thêm về method DatabaseMetadata và getMetadata.
+
+ ## DatabaseMetadata:
+  - Giao diện DatabaseMetaData trong java cung cấp các phương thức để lấy metadata của cơ sở dữ liệu như tên sản phẩm cơ sở dữ liệu,
+   phiên bản sản phẩm cơ sở dữ liệu, tên driver, tên của tổng số bảng, tên của tổng số các view, ..
+
+ ## Làm thế nào để có được đối tượng DatabaseMetaData
+  - Phương thức getMetaData() của Giao diện Connection trả về đối tượng DatabaseMetaData
+
+ ## cú pháp thực thi:
+
+    // khởi tạo DatabaseMetaData, c là một tham số truyền vào từ chương trình xem bên thực hành đễ rõ
+
+        DatabaseMetaData mt = c.getMetaData();
+    
+    // dùng DatabaseMetadat để lấy tên hệ quản trị cơ sở dữ liệu
+
+            System.out.println(mt.getDatabaseProductName());
+
+               ++ ngoài ra có thể lấy:
+                  > getDatabaseProductVersion: lấy tên vesion
+                  > getDatabaseMajorVersion: ?
+                  > getDatabaseMinorVersion: ?
+                  ....

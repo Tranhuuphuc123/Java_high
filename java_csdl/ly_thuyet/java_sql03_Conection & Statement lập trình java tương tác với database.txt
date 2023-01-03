@@ -1,0 +1,32 @@
+****************************TƯƠNG TÁC VỚI CƠ SỞ DỮ LIỆU CONNECTION****************
+>>> Mục đích: 
+  - sau khi kết nối được với sql thông qua phương thức giao tiếp JDBC thf ta tiến hành tương tác với nó.
+
+>>> Quy trình tương tác:
+ ## b1: tạo kết nối CSDL: xem kỹ tại bài 01
+ ## b2: Tạo đối tượng Statement
+  + Xác định câu lệnh SQL
+  + Tạo đối tượng Statement
+
+   > cú pháp:
+
+      Statement st = Conection.createStatetement();
+
+   > 3 loại Statement:   
+        ++ Statement
+        ++ PrepareStatment
+        ++ CallableStatemnt
+
+ ## b3 Thực thi Statement: câu lệnh SQL
+    + boolean exceute(String SQL): run bất kì câu lệnh nào trả về đúng sai
+    + int exceute(String SQL):cập nhật thông tin dữ liêu: thêm, sữa, xóa..
+    + ResultSet exceute(String SQL): lấy dữ liệu lên
+
+ ## b4 Xử lý kết quả trả về
+   --> để hiện ra dữ liệu ỏ màn hình, xử lý kết quả trả về
+   
+ ## b5: Ngắt kết nối với CSDL
+  --> tiến hành ngắt kết nối, để hạn chế việ giữ kết nối gây quá tải dữ liệu người dùng.
+
+ ===> code tham khảo xem bên phần thực hành module: tuongtac_csdl
+

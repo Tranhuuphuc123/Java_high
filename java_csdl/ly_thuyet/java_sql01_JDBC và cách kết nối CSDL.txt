@@ -19,8 +19,43 @@
  -b2: tải trình JDBC tương ứng SQL tương thích
    > vào link: 
    
-          https://dev.mysql.com/downloads/connector/j/
+         https://github.com/Tranhuuphuc123/Java_high.git
                                                 ^
      hoặc gõ                                    |
                                                 |
-           google>jdbc mysql driver download>click vào trang như trên.
+           google>jdbc mysql jar driver download>click vào trang như trên.
+
+           ---->tiến hành download file download mục download mysql conector java.jar
+
+ - b3: add lib JDBC vào lib của intelj IDE java:
+   > và intelj ide> file> Project Struture>Module>Dependencies>họ + (để add lin file.jar vào)> click ok là xong
+
+   or
+
+   >copy lib quăng vao mục lib trong project> r-click vào lib> add to libry>chọn rồi click ok là xong.
+
+
+
+ - b4: tiến hành code giao tiếp JDBC với Intelj java.
+  > đăng ký jdbc driver với DriverManager
+   
+        DriverManager.registerDriver( new com.mysql.jdbc.Driver());
+
+  > xác định đg link và thông số của server-gồm(localhost, port,tên data liên kết, username, passwork)
+
+            String url = "jdbc:mysql://127.0.0.1:3306/?user=root&password=Huuphuc1995ct@";
+
+
+    --->dg link url có thể lấy từ ưng dụng mysql
+
+  > tạo kết nối
+
+            c=DriverManager.getConnection(url);
+
+
+
+
+    ============================> code minh họa: xem phần thực hành.
+    
+
+        

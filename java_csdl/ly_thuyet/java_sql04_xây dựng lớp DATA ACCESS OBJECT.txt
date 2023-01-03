@@ -1,0 +1,3 @@
+***********XÂY DỰNG CÁC LỚP DATA ACCESS OBJECT CHO CÁC LỚP MODEL********************
+>>>> Khái niệm:
+ - 
