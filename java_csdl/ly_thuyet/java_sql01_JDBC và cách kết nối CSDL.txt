@@ -1,0 +1,26 @@
+********************JDBC và cách thức kết nối cơ sở dữ liệu trong java************
+>>>> Khái niệm:
+ -  JDBC(Java Database Connectivity là một API được thiết kế dành cho ngôn ngữ lập trình hỗ trợ java trong việc truy cập cơ sở dữ liệu. 
+ Nó bao gồm có những phương thức thực hiên truy vấn và cập nhât CSDL gián tiếp qua java).
+ ===> hiện nay người ta dùng nhiều Framewwork(Spring boot, Hibernate..) tương tác với JPA.. tuy nhiên là một ltv thì nên code căn bản
+ JDBC trước để hiểu rõ cấu trúc mã nguồn của nó.
+
+
+>>> Các JDBC Driver:
+ - JDBC-ODBC Bridge: kết nối hệ quản trị csdl cơ bản trên windown(phiên bản cũ trước java 8)
+ - Java Native
+ - JDBC Net
+ - Pure java: hỗ trợ java 8 trở lên bản đang dùng phổ biến hiện nay, dùng kết nối với csdl hiện đại(MySQL, )
+
+
+
+>>>Cách kết nối với CSDL thông qua JDBC:
+ -b1: chạy xammp , start mysql
+ -b2: tải trình JDBC tương ứng SQL tương thích
+   > vào link: 
+   
+          https://dev.mysql.com/downloads/connector/j/
+                                                ^
+     hoặc gõ                                    |
+                                                |
+           google>jdbc mysql driver download>click vào trang như trên.
