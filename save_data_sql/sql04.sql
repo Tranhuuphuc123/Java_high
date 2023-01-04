@@ -19,7 +19,7 @@ create database nhasach
 use nhasach
 -- tạo 2 table sach và  khachhang
 create table sach(
-  ID varchar(30)  primary key,
+  id varchar(30)  primary key,
   tensach varchar(500) not null,
   giaban int not null,
   namxuatban int null
@@ -34,9 +34,10 @@ create table khachHang(
 
 -- sữa lại tên ngày sinh
 
-alter table khachang change ngaydinh ngaysinh date
+alter table khachhang change ngaydinh ngaysinh date
 
-select * from khachang
+select * from khachHang
+select * from sach
 
 
 

@@ -11,11 +11,10 @@
    > cú pháp:
 
       Statement st = Conection.createStatetement();
-
-   > 3 loại Statement:   
-        ++ Statement
-        ++ PrepareStatment
-        ++ CallableStatemnt
+   > 3 đối tượng Statement
+     + Statement
+     + PreparedStaement
+     + CallableStatemnt   
 
  ## b3 Thực thi Statement: câu lệnh SQL
     + boolean exceute(String SQL): run bất kì câu lệnh nào trả về đúng sai
@@ -30,3 +29,22 @@
 
  ===> code tham khảo xem bên phần thực hành module: tuongtac_csdl
 
+
+
+
+=============================================================================================================================================
+************GIAO DIỆN STATEMENT****************
+>>>khái niệm:
+ - Statement interface trong java cung cấp các phương thức để thực thi các câu lệnh truy vấn với cơ sở dữ liệu SQL. Statement interface 
+ là một nhà máy của ResultSet, tức là nó cung cấp phương thức để tạo ra đối tượng ResultSet
+
+>>>>Method phổ biến của Statement
+
+          Phương thức                                                        	Mô tả
+1) public ResultSet executeQuery(String sql):	         được sử dụng để thực hiện truy vấn SELECT. Nó trả về đối tượng của ResultSet.
+
+2) public int executeUpdate(String sql):	             được sử dụng để thực thi câu truy vấn được chỉ định, nó có thể là create, drop, 
+                                                       insert, update, delete, ...
+
+3) boolean execute(String sql):                      	 được sử dụng để thực thi các câu truy vấn trả về nhiều kết quả.
+4) int[] executeBatch():	                              được sử dụng để thực thi một tập các lệnh.

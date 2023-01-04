@@ -1,3 +1,7 @@
 ***********XÂY DỰNG CÁC LỚP DATA ACCESS OBJECT CHO CÁC LỚP MODEL********************
 >>>> Khái niệm:
- - 
+ - Trong bài này ta sẽ học về kết hợp tương tác cơ sở dữ liệu kết hợp với thực hiện
+ Sử dụng JDBC để thêm, xóa, cập nhật dữ liệu bằng câu lệnh INSERT, UPDATE, DELETE
+
+
+ ===> xem phần thực  hành bài DatAcess_Object(nội dung chung của 2 phần này)
